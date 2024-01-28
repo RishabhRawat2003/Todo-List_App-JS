@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, rgba(567, 3, 6, 0.5), rgba(34, 67, 234, 0.5));
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    height: 50vh;
+    width: 40vw;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    max-height: 50vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.inputField {
+    height: 35px;
+    width: 350px;
+    border-radius: 60px;
+    font-size: 20px;
+}
+
+.addBtn {
+    height: 35px;
+    width: 70px;
+    border-radius: 20px;
+    margin-left: 1px;
+    background-color: lightblue;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.allTasks {
+    height: 25vh;
+    width: 32vw;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    overflow-y: scroll;
+    list-style: none;
+    list-style-type: number ;
+    /*border: 1px solid rgba(784, 3, 346, 0.9);*/
+    border-radius: 10px;
+}
+.allTasks::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+.allTasks li {
+    font-size: 23px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    width: 28vw;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.litext{
+    text-decoration: line-through 2px;
+}
+
+li i {
+    position: sticky;
+    left: 28.5vw;
+}
+li i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
